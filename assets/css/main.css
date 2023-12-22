@@ -1,0 +1,1103 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --MainColor: #262626;
+    --COLOR: #FF9500;
+    --secondColor: #F1F1F3;
+}
+
+body {
+    font-family: Be Vietnam Pro;
+    background: #F7F7F8;
+}
+
+header {
+    padding: 20px 0;
+}
+
+.container {
+    width: calc(100% - 160px);
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+header img,
+footer img {
+    width: 30px;
+    display: flex;
+}
+
+header nav {
+    flex-grow: 1;
+}
+
+nav .home {
+    padding: 14px 14px;
+    border-radius: 8px;
+    background: var(--secondColor);
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+li a {
+    color: var(--MainColor);
+}
+
+.auth {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.auth .Sign_Up {
+    color: var(--MainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth .log_In {
+    color: #FFF;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: #FF9500;
+    display: flex;
+}
+
+header svg {
+    display: none;
+    width: 20px;
+}
+
+.about {
+    padding: 70px 0;
+    ;
+}
+
+.about .row {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.about .IconLine {
+    position: relative;
+}
+
+.about .Line {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -21px;
+    top: -25px;
+}
+
+.about .Unlock {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-radius: 11px;
+    border: 1px solid var(#F1F1F3);
+    background: #FCFCFD;
+    padding: 14px 30px 14px 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.Unlock span {
+    color: var(--COLOR);
+}
+
+.Unlock h2 {
+    font-size: 35px;
+}
+
+.Unlock img {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: #FFF4E5;
+    padding: 10px;
+}
+
+.about .row p:first-of-type {
+    font-size: 25px;
+    align-self: stretch;
+    text-align: center;
+    font-weight: 500;
+}
+
+.about .row p:last-of-type {
+    color: var(--MainColo);
+    font-size: 15px;
+    margin-top: -11px;
+    font-weight: 400;
+}
+
+.view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.view .ExploreCourses {
+    color: #FFF;
+    border-radius: 8px;
+    background: var(--COLOR);
+    padding: 10px 15px;
+}
+
+.view .ViewPricing {
+    color: var(--MainColo);
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid var(--secondColor);
+    background: #FFF;
+}
+
+.companyLogo .row {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    gap: 20px;
+    background: #FFF;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.companyLogo .copmlogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex: 1 0 0;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 1px;
+    height: 68px;
+    background: #F1F1F3;
+}
+
+.video {
+    padding: 40px 0;
+}
+
+.vidicon {
+    padding: 15px;
+    z-index: 1;
+    position: absolute;
+    border-radius: 60px;
+    border: 6px solid rgba(225, 225, 225, 0.30);
+    background: rgba(225, 225, 225, 0.30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.vidicon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.video .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ved {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+}
+
+.video img {
+    width: 100%;
+    align-self: stretch;
+    border-radius: 12px;
+
+}
+
+.Benefits {
+    padding: 40px 0;
+}
+
+.Benefitt,
+.course,
+.Testimonial,
+.Pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1 0 0;
+}
+
+.Benefitt h3,
+.course h3,
+.Testimonial h3,
+.OurPricing h3 {
+    font-size: 30px;
+}
+
+.about_Benefit,
+.about_course,
+.about_Testimonial,
+.about_Pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.about_Benefit p,
+.about_course p,
+.about_Testimonial p,
+.about_Pricing p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #59595A;
+    flex-basis: 800px;
+}
+
+.Benefits .about_Benefit .button,
+.about_course .button,
+.about_Testimonial .button {
+    padding: 10px 15px;
+    font-size: 10px;
+    border-radius: 8px;
+    color: var(--MainColo);
+    text-align: center;
+    border: 1px solid var(--secondColor);
+    background: #FCFCFD;
+}
+
+.item {
+    padding: 40px 0;
+}
+
+.Benefitscards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Benefit {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 12px;
+    width: calc((100% - 20px) / 3);
+    gap: 50px;
+    align-self: stretch;
+    justify-content: space-between;
+    background: #FFF;
+}
+
+.num {
+    color: var(--MainColor);
+    font-size: 40px;
+}
+
+.Benefit-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 14px
+}
+
+.Benefit-desc h3 {
+    font-size: 20px;
+    color: #333;
+    font-style: normal;
+    font-weight: 400;
+    align-self: stretch;
+    letter-spacing: -0.144px;
+}
+
+.Benefit .iconben {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #f1f1f3);
+    background: var(--White-99, #fcfcfd);
+}
+
+.Benefit-desc p,
+.courses .course_info2 p {
+    align-self: stretch;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    color: #4C4C4D;
+}
+
+.course_item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.courses .course_card,
+.Testimonial_info {
+    width: calc((100% - 20px) / 2);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 12px;
+    border: 1px solid #F1F1F3;
+    background: #FFF;
+}
+
+.courses .course_card img {
+    display: flex;
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.courses .course_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.course_info .week {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: #4C4C4D;
+    font-size: 10px;
+}
+
+.week span {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    background: #FFF;
+}
+
+.course_info .last {
+    color: #262626;
+    font-size: 14px;
+}
+
+.courses .course_info2 {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.courses .course_info2 h4 {
+    color: var(--MainColor);
+    font-size: 17px;
+}
+
+.courses .course_info2 a {
+    display: flex;
+    padding: 15px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--secondColor);
+    background: #F7F7F8;
+    color: #262626;
+    font-size: 14px;
+}
+
+.OurTestimonials .row {
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.desc_Testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.desc_Testimonial a {
+    align-self: flex-end;
+    color: var(--MainColor);
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid var(--secondColor);
+    background: #F7F7F8;
+}
+
+.Testimonialphoto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Testimonialphoto img {
+    width: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.Testimonialphoto span {
+    align-self: center;
+    color: #333;
+    font-size: 14px;
+}
+
+.OurPricing .row {
+    gap: 10px;
+}
+
+.OurPricing .Auth {
+    display: flex;
+    padding: 12px;
+    gap: 5px;
+    align-items: center;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.OurPricing .Auth .Monthly {
+    display: flex;
+    padding: 10px 15px;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #FF9500;
+}
+
+.OurPricing .Auth .Yearly {
+    display: flex;
+    padding: 10px 15px;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: #4C4C4D;
+}
+
+.PricingCont {
+    padding: 40px 0;
+}
+
+.PricingCont .row {
+    border-radius: 12px;
+    background: var(--Absolute-White, #FFF);
+    padding: 80px;
+}
+
+.PricingCont .left-item,
+.PricingCont .right-item {
+    display: flex;
+    padding: 40px 20px 24px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex: 1 0 0;
+    border-radius: 12px;
+    border: 1px solid var(--white-95, #F1F1F3);
+    background: var(--white-99, #FCFCFD);
+
+}
+
+.free {
+    display: flex;
+    padding: 10px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--orange-90, #FFEACC);
+    background: var(--orange-97, #FFF9F0);
+}
+
+.pricemonth {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.pricemonth .price {
+    font-size: 40px;
+}
+
+.designav {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 14px 14px 0px 0px;
+    border: 1px solid #F1F1F3;
+    background: #FFF;
+}
+
+.AvailableFeatures {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.listinfo {
+    display: flex;
+    padding: 0px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+
+.listinfo .logo {
+    display: flex;
+    padding: 12px;
+    align-items: flex-end;
+    gap: 8px;
+    /* text-align: center; */
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--secondColor);
+}
+
+.listinfo .logo svg {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 6px;
+    border-radius: 6px;
+    display: flex;
+    background: #FFF4E5;
+}
+
+.listinfo .xlogo svg {
+    background: white;
+    border: 1px solid var(--secondColor);
+}
+
+.listinfo .logo p {
+    color: #4C4C4D;
+    font-size: 10px;
+}
+
+.GetStarted {
+    display: flex;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 0px 0px 8px 8px;
+    background: #FF9500;
+}
+
+.GetStarted a {
+    color: #FFF;
+}
+
+footer {
+    padding: 40px 0;
+    background: #FFF;
+}
+
+footer .left_side {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+footer .left_side img {
+    margin-bottom: 10px;
+    ;
+}
+
+footer .left_side .Social_info {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 5px;
+    align-items: center;
+}
+
+footer .right_side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* flex-direction: column; */
+}
+
+footer .right_side .footer_item nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+.footer_item h3 {
+    margin-bottom: 10px;
+    ;
+    color: var(--MainColor);
+    font-size: 15px;
+}
+
+footer .right_side .footer_item nav a {
+    color: #59595A;
+    font-size: 10px;
+}
+
+footer .right_side .Socialimg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+footer .right_side .Socialimg svg {
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-97, #F7F7F8);
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    color: #656567;
+    font-size: 10px;
+
+}
+
+@media screen and (max-width: 1440px) {
+    .companyLogo .companylogo {
+        justify-content: space-evenly;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header img {
+        width: 23px;
+    }
+
+    header ul a {
+        font-size: 9px;
+    }
+
+    nav .home {
+        padding: 11px 11px;
+        border-radius: 6px;
+    }
+
+    .auth {
+        font-size: 10px;
+    }
+
+    .auth .log_In {
+        padding: 3px 13px;
+    }
+
+    .video .vedioImg {
+        width: 950px;
+    }
+
+    .video .icon {
+        left: 32%;
+    }
+
+    .Benefit_card2 {
+        gap: 49px;
+    }
+
+    .GetStarted a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .companyLogo .companylogo {
+        justify-content: space-evenly;
+    }
+
+    .Benefit_card4 {
+        gap: 42px;
+    }
+
+    .Benefit_card5 {
+        gap: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .companyLogo .companylogo {
+        overflow-x: auto;
+        gap: 30px;
+    }
+
+    .vidicon {
+        padding: 8px;
+    }
+
+    .vidicon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Benefit {
+        width: calc((100% - 20px) / 2);
+        ;
+    }
+
+    .course_info .last {
+        font-size: 7px;
+    }
+
+    .courses .course_info {
+        gap: 0;
+    }
+
+    .courses .course_info2 h4 {
+        font-size: 15px;
+    }
+
+    .Benefit-desc p,
+    .courses .course_info2 p {
+        font-size: 13px;
+    }
+
+    .desc_Testimonial {
+        gap: 15px;
+    }
+
+    .about_Benefit,
+    .about_course,
+    .about_Testimonial,
+    .about_Pricing {
+        gap: 10px;
+    }
+
+    .PricingCont .row {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    header nav {
+        display: none;
+    }
+
+    header svg {
+        display: block;
+    }
+
+    .about {
+        padding: 40px 0;
+        ;
+    }
+
+    .about .Line {
+        width: 25px;
+        height: 25px;
+        left: -15px;
+        top: -16px;
+    }
+
+    .Unlock h2 {
+        font-size: 11px;
+    }
+
+    .about .row p:first-of-type {
+        font-size: 25px;
+        line-height: 150%;
+    }
+
+    .about .row p:last-of-type {
+        font-size: 11px;
+        margin-top: 1px;
+        text-align: center;
+    }
+
+    .about .Unlock {
+        flex-wrap: nowrap;
+    }
+
+    .view {
+        font-size: 10px;
+    }
+
+    .companyLogo .companylogo {
+        overflow-x: auto;
+        gap: 9px;
+    }
+
+    .companyLogo .companylogo img {
+        width: calc(100% / 7);
+        /* height: 25px; */
+    }
+
+    .Benefit,
+    .courses .course_card,
+    .Testimonial_info {
+        width: 100%;
+    }
+
+    .Benefit h3,
+    .course h3,
+    .Testimonial h3,
+    .OurPricing h3 {
+        font-size: 18px;
+    }
+
+    .course_info .last {
+        font-size: 7px;
+    }
+
+    .week span {
+        padding: 6px 0;
+    }
+
+    .courses .course_info {
+        gap: 2px;
+    }
+
+    .PricingCont .row {
+        width: 297px;
+        padding: 20px;
+    }
+
+    .PricingCont .left-item,
+    .PricingCont .right-item {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .listinfo {
+        padding: 0 0;
+    }
+
+    .AvailableFeatures h2 {
+        font-size: 14px;
+    }
+
+    .listinfo .logo p {
+        font-size: 9px;
+    }
+
+    footer .row {
+        gap: 30px;
+    }
+
+    footer .right_side {
+        gap: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .row {
+        gap: 10px;
+    }
+
+    header img {
+        width: 19px;
+    }
+
+    .auth {
+        font-size: 10px;
+        gap: 7px;
+    }
+
+    .auth .log_In {
+        padding: 3px 13px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header svg {
+        display: block;
+    }
+
+    .about {
+        padding: 40px 0;
+        ;
+    }
+
+    .about .Line {
+        width: 25px;
+        height: 25px;
+        left: -15px;
+        top: -16px;
+    }
+
+    .Unlock h2 {
+        font-size: 11px;
+    }
+
+    .about .row p:first-of-type {
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .about .row p:last-of-type {
+        font-size: 10px;
+        margin-top: 1px;
+        text-align: center;
+    }
+
+    .about .Unlock {
+        flex-wrap: nowrap;
+    }
+
+    .view {
+        font-size: 10px;
+    }
+
+    .companyLogo .companylogo {
+        overflow-x: auto;
+        gap: 30px;
+
+    }
+
+    .companyLogo .companylogo img {
+        width: 48px;
+        height: 24px;
+    }
+
+    .vidicon {
+        padding: 3px;
+        border: 1px solid rgba(225, 225, 225, 0.30);
+    }
+
+    .vidicon svg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .Benefits {
+        padding: 10px 0;
+    }
+
+    .Benefit,
+    .courses .course_card,
+    .Testimonial_info {
+        width: 100%;
+    }
+
+    .Benefit h3,
+    .course h3,
+    .Testimonial h3,
+    .OurPricing h3 {
+        font-size: 18px;
+    }
+
+    .courses .course_info {
+        flex-wrap: wrap;
+    }
+
+    .Testimonial_info p {
+        font-size: 11px;
+    }
+
+    .desc_Testimonial a {
+        margin-top: 10px;
+    }
+
+    .PricingCont .row {
+        width: 297px;
+        padding: 20px;
+    }
+
+    .PricingCont .left-item,
+    .PricingCont .right-item {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .listinfo {
+        padding: 0 0;
+    }
+
+    .AvailableFeatures h2 {
+        font-size: 14px;
+    }
+
+    .listinfo .logo p {
+        font-size: 9px;
+    }
+
+    footer .row {
+        gap: 30px;
+    }
+
+    footer .right_side {
+        gap: 20px 7px
+    }
+}
